@@ -14,16 +14,19 @@ let c = ["ชาม", "จาน"]
 let d = a.concat(b,c);
 console.log(d)
 
-// let points = [20, 100, -100, 5, -25, 10]
 
-// function order(points) {
-//     points.sort((a,b) => b-a)  
-//     return points;
-    
+// เรียงลำดับใน Array แบบตัวเลข (น้อยไปมาก-มากไปน้อย)
+//เป็นแบบการกำหนดค่า
+let points = [20, 100, -100, 5, -25, 10]
+
+points.sort(function(a,b){
+    return b-a
+});
+console.log(points)
+
+//เป็นการส่งค่าเข้าไปใน function
+// function order(point) {
+//     return point.sort((a,b) => a-b)
 // }
 
-function order(point) {
-    return point.sort((a,b) => a-b)
-}
-
-console.log(order([20, 100, -100, 5, -25, 10]))
+// console.log(order([20, 100, -100, 5, -25, 10]))
